@@ -3,37 +3,59 @@
 <head>
       <title> Contact Us Form </title>
 	  <meta name="viewport" content="width=device-width; initial-scale=1.0">
-	  <style>
+   <style>
 	  body{
-	       background-color:#0000002b;
-		   margin:80px;
-	  }
+             background-color:#009688;
+      }
 	  div{
-	      font-family:Arial Rounded MT Bold;
-	      color:#3e8e6d;
+	      background-color:#00ff99;
+              width:50%;
+              height:45%;
+              padding: 70px;
+              position: relative;
+              margin:80px auto;
+	      
 	  }
-	  </style>
+	  .tile{
+	      font-family:Arial Rounded MT Bold;
+	      color:#253dc3;
+	  }
+	  
+   </style>
 </head>
  
 <body>
-   <strong>
-      <div align="center"> Send Message Here </div> <hr>
-   </strong>
-   <p> Name*
-       <input type="text" name="Firstnme" placeholder="First Name" width="60" required>
-       <input type="text" name="Lastnme" placeholder="Last Name" width="60" required> 
-   </p>
-   <p> Email*<input type="email" name="email" required> </p>
-   <p> Type your message here:  </p>
-          <textarea name="tamessage" rows="10" cols="60" placeholder:"Type your message over here..."> </textarea>
-   
-   <p> Please do rate upon your satisficatory: </p>
-   <input type="radio" name="satisfication" Value="VSatis"> Very Satisfied <br>
-   <input type="radio" name="satisfication" Value="Satis"> Satisfied <br>
-   <input type="radio" name="satisfication" Value="DisSatis"> Dissatisfied <br>
-   <p> Thank you for visiting our website </p>
-   <input type="submit" src="Images/Submit.png" width="150px">
-   <input type="reset">
+     <div>
+	     <fieldset>
+		           <legend class="tile"> Send Mesage Here 
+				          </legend>
+          
+		     <form method="post">
+             Name:
+		        <input type="text" name="firstnme" placeholder="First Name" required>
+                <input type="text" name="lastnme" placeholder="Last Name" required> <br> <br>
+
+             Email:
+		        <input type="email" name="email" placeholder="exp:sha@gmail.com" required> <br>
+
+		    <h4> Type your message here </h4>
+		         <textarea name="tamessage" rows="10" cols="60" placeholder="Type your message over here..."> 
+		                   </textarea> <br>
+			
+			     <input type="checkbox" name="chk"> Send respond to email <br>
+		 
+		    <h4> Please do rate upon your satisficatory: <h4>
+                 <input type="radio" name="satisfication" Value="VSatis"> Very Satisfied <br>
+				 <input type="radio" name="satisfication" Value="Satis"> Satisfied <br>
+				 <input type="radio" name="satisfication" Value="DisSatis"> Dissatisfied <br>
+            <p> Thank you for visiting our website </p>
+
+                 <input type="image" src="Images/Submit.png" width="120px">
+                 <input type="reset">
+			
+			</form>
+		</fieldset>
+	</div>
 
 </body>
 </html>
